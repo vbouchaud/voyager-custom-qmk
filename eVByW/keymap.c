@@ -304,7 +304,7 @@ void dance_3_finished(tap_dance_state_t *state, void *user_data) {
     dance_state[3].step = dance_step(state);
     switch (dance_state[3].step) {
         case SINGLE_TAP: register_code16(KC_V); break;
-        case DOUBLE_TAP: set_oneshot_layer(5, ONESHOT_START); set_oneshot_layer(5, ONESHOT_PRESSED); break;
+        case DOUBLE_TAP: set_oneshot_layer(5, ONESHOT_START); clear_oneshot_layer_state(ONESHOT_PRESSED); break;
         case DOUBLE_SINGLE_TAP: tap_code16(KC_V); register_code16(KC_V);
     }
 }

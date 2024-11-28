@@ -38,23 +38,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [2] = LAYOUT_voyager(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          QK_BOOT,        
-    KC_NO,          KC_NO,          KC_AUDIO_VOL_DOWN,KC_AUDIO_MUTE,  KC_AUDIO_VOL_UP,KC_NO,                                          KC_PAGE_UP,     KC_HOME,        TD(DANCE_4),    KC_END,         KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          MT(MOD_LGUI, KC_MEDIA_PREV_TRACK),MT(MOD_LALT, KC_MEDIA_PLAY_PAUSE),MT(MOD_LCTL, KC_MEDIA_NEXT_TRACK),KC_NO,                                          KC_PGDN,        KC_LEFT,        KC_UP,          KC_RIGHT,       KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          LCTL(LSFT(KC_TAB)),KC_DOWN,        LCTL(KC_TAB),   KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          KC_AUDIO_VOL_DOWN,KC_AUDIO_MUTE,  KC_AUDIO_VOL_UP,KC_NO,                                          KC_PAGE_UP,     KC_HOME,        KC_UP,          KC_END,         KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          MT(MOD_LGUI, KC_MEDIA_PREV_TRACK),MT(MOD_LALT, KC_MEDIA_PLAY_PAUSE),MT(MOD_LCTL, KC_MEDIA_NEXT_TRACK),KC_NO,                                          KC_PGDN,        KC_LEFT,        KC_DOWN,        KC_RIGHT,       KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          LCTL(LSFT(KC_TAB)),TD(DANCE_4),    LCTL(KC_TAB),   KC_NO,          KC_NO,          
                                                     KC_TRANSPARENT, KC_NO,                                          KC_NO,          KC_NO
   ),
   [3] = LAYOUT_voyager(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          KC_MS_WH_LEFT,  KC_MS_WH_UP,    KC_MS_WH_RIGHT, KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          MT(MOD_LGUI, KC_MS_BTN3),KC_MS_BTN1,     MT(MOD_LCTL, KC_MS_BTN2),KC_NO,                                          KC_NO,          KC_MS_LEFT,     KC_MS_UP,       KC_MS_RIGHT,    KC_TRANSPARENT, KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          KC_MS_WH_DOWN,  KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_MS_DOWN,     KC_NO,          KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          KC_MS_WH_LEFT,  KC_MS_WH_UP,    KC_MS_WH_RIGHT, KC_NO,                                          KC_NO,          KC_NO,          KC_MS_UP,       KC_NO,          KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          MT(MOD_LGUI, KC_MS_BTN3),KC_MS_BTN1,     MT(MOD_LCTL, KC_MS_BTN2),KC_NO,                                          KC_NO,          KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_TRANSPARENT, KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          KC_MS_WH_DOWN,  KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
                                                     KC_NO,          KC_NO,                                          KC_NO,          KC_NO
   ),
   [4] = LAYOUT_voyager(
     KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          
-    KC_NO,          LGUI(LSFT(KC_Q)),LGUI(LSFT(KC_R)),TD(DANCE_5),    LGUI(KC_R),     LGUI(LSFT(KC_J)),                                KC_NO,          TD(DANCE_6),    KC_NO,          KC_NO,          KC_NO,          KC_NO,          
-    KC_NO,          KC_TRANSPARENT, LGUI(LSFT(KC_LEFT)),LGUI(LSFT(KC_UP)),LGUI(LSFT(KC_RIGHT)),LGUI(KC_M),                                     LGUI(KC_A),     LGUI(KC_LEFT),  LGUI(KC_UP),    LGUI(KC_RIGHT), KC_NO,          KC_NO,          
-    KC_NO,          KC_NO,          KC_NO,          LGUI(LSFT(KC_DOWN)),KC_NO,          LGUI(KC_B),                                     KC_NO,          TD(DANCE_7),    LGUI(KC_DOWN),  TD(DANCE_8),    KC_NO,          KC_NO,          
+    KC_NO,          LGUI(LSFT(KC_Q)),LGUI(LSFT(KC_R)),LGUI(LSFT(KC_UP)),LGUI(KC_R),     LGUI(LSFT(KC_J)),                                KC_NO,          KC_NO,          LGUI(KC_UP),    KC_NO,          KC_NO,          KC_NO,          
+    KC_NO,          KC_TRANSPARENT, LGUI(LSFT(KC_LEFT)),LGUI(LSFT(KC_DOWN)),LGUI(LSFT(KC_RIGHT)),LGUI(KC_M),                                     LGUI(KC_A),     LGUI(KC_LEFT),  LGUI(KC_DOWN),  LGUI(KC_RIGHT), KC_NO,          KC_NO,          
+    KC_NO,          KC_NO,          KC_NO,          TD(DANCE_5),    KC_NO,          LGUI(KC_B),                                     KC_NO,          TD(DANCE_6),    TD(DANCE_7),    TD(DANCE_8),    KC_NO,          KC_NO,          
                                                     LGUI(LCTL(KC_LEFT)),KC_NO,                                          KC_NO,          LGUI(LCTL(KC_RIGHT))
   ),
   [5] = LAYOUT_voyager(
@@ -79,11 +79,11 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
 
     [1] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {144,255,255}, {144,255,255}, {144,255,255}, {144,255,255}, {0,0,0}, {0,0,0}, {144,255,255}, {41,255,255}, {0,0,255}, {0,0,255}, {0,0,0}, {0,0,0}, {144,255,255}, {144,255,255}, {144,255,255}, {144,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {82,218,204}, {41,255,255}, {41,255,255}, {41,255,255}, {82,218,204}, {0,0,0}, {82,218,204}, {41,255,255}, {41,255,255}, {41,255,255}, {82,218,204}, {0,0,0}, {41,255,255}, {41,255,255}, {41,255,255}, {41,255,255}, {82,218,204}, {0,0,0}, {0,0,0}, {0,0,0} },
 
-    [2] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {20,218,204}, {20,218,204}, {20,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {38,136,255}, {38,136,255}, {38,136,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,85,255}, {42,218,204}, {42,218,204}, {82,89,255}, {42,218,204}, {0,0,0}, {0,0,0}, {42,218,204}, {12,209,255}, {12,209,255}, {12,209,255}, {0,0,0}, {0,0,0}, {0,0,0}, {144,218,255}, {12,209,255}, {144,218,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
+    [2] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {20,218,204}, {20,218,204}, {20,218,204}, {0,0,0}, {0,0,0}, {0,0,0}, {38,136,255}, {38,136,255}, {38,136,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,85,255}, {42,218,204}, {42,218,204}, {12,209,255}, {42,218,204}, {0,0,0}, {0,0,0}, {42,218,204}, {12,209,255}, {12,209,255}, {12,209,255}, {0,0,0}, {0,0,0}, {0,0,0}, {144,218,255}, {82,89,255}, {144,218,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
-    [3] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {159,173,188}, {159,173,188}, {159,173,188}, {0,0,0}, {0,0,0}, {0,0,0}, {139,188,252}, {139,67,171}, {139,188,252}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {159,173,188}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {139,188,252}, {139,188,252}, {139,188,252}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {139,188,252}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
+    [3] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {159,173,188}, {159,173,188}, {159,173,188}, {0,0,0}, {0,0,0}, {0,0,0}, {139,188,252}, {139,67,171}, {139,188,252}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {159,173,188}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {139,188,252}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {139,188,252}, {139,188,252}, {139,188,252}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
-    [4] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,255}, {37,255,255}, {0,4,255}, {37,255,255}, {0,255,255}, {0,0,0}, {0,0,0}, {97,255,255}, {97,255,255}, {97,255,255}, {37,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {97,255,255}, {0,0,0}, {37,255,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {165,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {130,255,255}, {130,255,255}, {130,255,255}, {130,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {165,255,255}, {130,255,255}, {165,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255} },
+    [4] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,255,255}, {37,255,255}, {97,255,255}, {37,255,255}, {0,255,255}, {0,0,0}, {0,0,0}, {97,255,255}, {97,255,255}, {97,255,255}, {37,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,4,255}, {0,0,0}, {37,255,255}, {0,0,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {130,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {130,255,255}, {130,255,255}, {130,255,255}, {130,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {165,255,255}, {165,255,255}, {165,255,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,255} },
 
     [5] = { {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {14,255,248}, {14,255,248}, {14,255,248}, {14,255,248}, {14,255,248}, {0,0,0}, {36,190,255}, {36,190,255}, {36,190,255}, {36,190,255}, {36,190,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {14,255,248}, {14,255,248}, {14,255,248}, {14,255,248}, {14,255,248}, {0,0,0}, {36,190,255}, {36,190,255}, {36,190,255}, {36,190,255}, {36,190,255}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0}, {0,0,0} },
 
@@ -393,30 +393,30 @@ void dance_6_reset(tap_dance_state_t *state, void *user_data);
 
 void on_dance_6(tap_dance_state_t *state, void *user_data) {
     if(state->count == 3) {
-        tap_code16(LGUI(LSFT(KC_C)));
-        tap_code16(LGUI(LSFT(KC_C)));
-        tap_code16(LGUI(LSFT(KC_C)));
+        tap_code16(LCTL(LGUI(KC_SPACE)));
+        tap_code16(LCTL(LGUI(KC_SPACE)));
+        tap_code16(LCTL(LGUI(KC_SPACE)));
     }
     if(state->count > 3) {
-        tap_code16(LGUI(LSFT(KC_C)));
+        tap_code16(LCTL(LGUI(KC_SPACE)));
     }
 }
 
 void dance_6_finished(tap_dance_state_t *state, void *user_data) {
     dance_state[6].step = dance_step(state);
     switch (dance_state[6].step) {
-        case SINGLE_TAP: register_code16(LGUI(LSFT(KC_C))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_C)); break;
-        case DOUBLE_SINGLE_TAP: tap_code16(LGUI(LSFT(KC_C))); register_code16(LGUI(LSFT(KC_C)));
+        case SINGLE_TAP: register_code16(LCTL(LGUI(KC_SPACE))); break;
+        case DOUBLE_TAP: register_code16(LGUI(KC_SPACE)); break;
+        case DOUBLE_SINGLE_TAP: tap_code16(LCTL(LGUI(KC_SPACE))); register_code16(LCTL(LGUI(KC_SPACE)));
     }
 }
 
 void dance_6_reset(tap_dance_state_t *state, void *user_data) {
     wait_ms(10);
     switch (dance_state[6].step) {
-        case SINGLE_TAP: unregister_code16(LGUI(LSFT(KC_C))); break;
-        case DOUBLE_TAP: unregister_code16(LGUI(KC_C)); break;
-        case DOUBLE_SINGLE_TAP: unregister_code16(LGUI(LSFT(KC_C))); break;
+        case SINGLE_TAP: unregister_code16(LCTL(LGUI(KC_SPACE))); break;
+        case DOUBLE_TAP: unregister_code16(LGUI(KC_SPACE)); break;
+        case DOUBLE_SINGLE_TAP: unregister_code16(LCTL(LGUI(KC_SPACE))); break;
     }
     dance_state[6].step = 0;
 }
@@ -426,30 +426,30 @@ void dance_7_reset(tap_dance_state_t *state, void *user_data);
 
 void on_dance_7(tap_dance_state_t *state, void *user_data) {
     if(state->count == 3) {
-        tap_code16(LCTL(LGUI(KC_SPACE)));
-        tap_code16(LCTL(LGUI(KC_SPACE)));
-        tap_code16(LCTL(LGUI(KC_SPACE)));
+        tap_code16(LGUI(LSFT(KC_C)));
+        tap_code16(LGUI(LSFT(KC_C)));
+        tap_code16(LGUI(LSFT(KC_C)));
     }
     if(state->count > 3) {
-        tap_code16(LCTL(LGUI(KC_SPACE)));
+        tap_code16(LGUI(LSFT(KC_C)));
     }
 }
 
 void dance_7_finished(tap_dance_state_t *state, void *user_data) {
     dance_state[7].step = dance_step(state);
     switch (dance_state[7].step) {
-        case SINGLE_TAP: register_code16(LCTL(LGUI(KC_SPACE))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_SPACE)); break;
-        case DOUBLE_SINGLE_TAP: tap_code16(LCTL(LGUI(KC_SPACE))); register_code16(LCTL(LGUI(KC_SPACE)));
+        case SINGLE_TAP: register_code16(LGUI(LSFT(KC_C))); break;
+        case DOUBLE_TAP: register_code16(LGUI(KC_C)); break;
+        case DOUBLE_SINGLE_TAP: tap_code16(LGUI(LSFT(KC_C))); register_code16(LGUI(LSFT(KC_C)));
     }
 }
 
 void dance_7_reset(tap_dance_state_t *state, void *user_data) {
     wait_ms(10);
     switch (dance_state[7].step) {
-        case SINGLE_TAP: unregister_code16(LCTL(LGUI(KC_SPACE))); break;
-        case DOUBLE_TAP: unregister_code16(LGUI(KC_SPACE)); break;
-        case DOUBLE_SINGLE_TAP: unregister_code16(LCTL(LGUI(KC_SPACE))); break;
+        case SINGLE_TAP: unregister_code16(LGUI(LSFT(KC_C))); break;
+        case DOUBLE_TAP: unregister_code16(LGUI(KC_C)); break;
+        case DOUBLE_SINGLE_TAP: unregister_code16(LGUI(LSFT(KC_C))); break;
     }
     dance_state[7].step = 0;
 }
